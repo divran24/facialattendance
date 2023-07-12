@@ -7,17 +7,17 @@ from datetime import datetime
 video_capture = cv2.VideoCapture(0)
 
 #load known faces
-dillu_image = face_recognition.load_image_file("faces/dillu.jpg")
-dillu_encoding = face_recognition.face_encodings(dillu_image)[0]
+image1_image = face_recognition.load_image_file("faces/image1.jpg")
+image1_encoding = face_recognition.face_encodings(image1_image)[0]
 
-papa_image = face_recognition.load_image_file("faces/papa.jpg")
-papa_encoding = face_recognition.face_encodings(papa_image)[0]
+image2_image = face_recognition.load_image_file("faces/image2.jpg")
+image2_encoding = face_recognition.face_encodings(image2_image)[0]
 
-mummy_image = face_recognition.load_image_file("faces/mummy.jpg")
-mummy_encoding = face_recognition.face_encodings(mummy_image)[0]
+image3_image = face_recognition.load_image_file("faces/image3.jpg")
+image3_encoding = face_recognition.face_encodings(image3_image)[0]
 
-known_face_encoding = [dillu_encoding, papa_encoding , mummy_encoding]
-known_face_names = ["name1", "name2", "name3"]
+known_face_encoding = [image1_encoding, image2_encoding , image3_encoding]
+known_face_names = ["name1", "name2", "name3"]   #write the name to be displayed in the camera window
 
 #list of expected students
 students = known_face_names.copy()
