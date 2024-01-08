@@ -1,7 +1,7 @@
-#facialattendance
+# Facialattendance
 The code provided above demonstrates the implementation of a facial attendance system using Python. To run this code successfully, you'll need to have several Python packages installed: face-recognition, numpy, openpyxl, and opencv-python.
 
-Here's how the code works:
+# Here's how the code works:
 
 The code starts by loading known faces and their corresponding names from a specified directory.
 An attendance log is initialized to store the attendance data.
